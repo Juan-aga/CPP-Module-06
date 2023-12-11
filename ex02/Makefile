@@ -2,7 +2,7 @@ NAME		=	identify
 
 CC			=	c++
 
-CFLAGS		=	-Wall -Werror -Wextra -D DEBUG=$(DEBUG) $(INCLUDES)
+CFLAGS		=	-Wall -Werror -Wextra -std=c++98 -D DEBUG=$(DEBUG) $(INCLUDES)
 
 RM			=	rm -rf
 

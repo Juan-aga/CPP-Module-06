@@ -69,7 +69,7 @@ void    indentify( Base & p )
     std::cout << "Actual type reference is: ";
     try
     {
-        dynamic_cast<A &>(p);
+        (void)dynamic_cast<A &>(p);
         std::cout << "A\n";
         return ;
     }
@@ -77,7 +77,7 @@ void    indentify( Base & p )
     {}
     try
     {
-        dynamic_cast<B &>(p);
+        (void)dynamic_cast<B &>(p);
         std::cout << "B\n";
         return ;
     }
@@ -85,7 +85,7 @@ void    indentify( Base & p )
     {}
     try
     {
-        dynamic_cast<C &>(p);
+        (void)dynamic_cast<C &>(p);
         std::cout << "C\n";
         return ;
     }
